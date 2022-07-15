@@ -17,37 +17,37 @@ $(window).load(function(){
  var portfolio =  $('#portfolio').offset().top;
  var contact =  $('#contact').offset().top;
 
-   $(window).scroll(function () {
-      if(  $(window).scrollTop() >= about && $(window).scrollTop() < work){
-            $('.introTop').addClass('navigationBgBlack');
-            console.log(1);
-      }else{
-            $('.introTop').removeClass('navigationBgBlack');
-            console.log(2);
-      }
-   });
-   $(window).on('scroll', function () {
-      if(  $(window).scrollTop() >= work && $(window).scrollTop() <portfolio){
-            $('.introTop').addClass('navigationBgPure');
-
-      }else{
-            $('.introTop').removeClass('navigationBgPure');
-      }
-   });
-   $(window).on('scroll', function () {
-      if( $(window).scrollTop() >= portfolio && $(window).scrollTop() <contact){
-            $('.introTop').addClass('navigationBgWhite');
-      }else{
-            $('.introTop').removeClass('navigationBgWhite');
-      }
-   });
-   $(window).on('scroll', function () {
-   if($(window).scrollTop() >= contact){
-         $('.introTop').addClass('navigationBgGrey');
-   }else{
-         $('.introTop').removeClass('navigationBgGrey');
-   }
-   });
+   // $(window).scroll(function () {
+   //    if(  $(window).scrollTop() >= about && $(window).scrollTop() < work){
+   //          $('.introTop').addClass('navigationBgBlack');
+   //          console.log(1);
+   //    }else{
+   //          $('.introTop').removeClass('navigationBgBlack');
+   //          console.log(2);
+   //    }
+   // });
+   // $(window).on('scroll', function () {
+   //    if(  $(window).scrollTop() >= work && $(window).scrollTop() <portfolio){
+   //          $('.introTop').addClass('navigationBgPure');
+   //
+   //    }else{
+   //          $('.introTop').removeClass('navigationBgPure');
+   //    }
+   // });
+   // $(window).on('scroll', function () {
+   //    if( $(window).scrollTop() >= portfolio && $(window).scrollTop() <contact){
+   //          $('.introTop').addClass('navigationBgWhite');
+   //    }else{
+   //          $('.introTop').removeClass('navigationBgWhite');
+   //    }
+   // });
+   // $(window).on('scroll', function () {
+   // if($(window).scrollTop() >= contact){
+   //       $('.introTop').addClass('navigationBgGrey');
+   // }else{
+   //       $('.introTop').removeClass('navigationBgGrey');
+   // }
+   // });
 })
 // $(window).scrollTop() > 1000 && $(window).scrollTop() <2500
 
