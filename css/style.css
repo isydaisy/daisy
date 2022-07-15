@@ -358,6 +358,12 @@ h1{
 .portfolio{background:rgb(0, 0, 0) no-repeat;  background-size: cover; height: 100vh; display: flex; flex-direction:column; justify-content: center; align-items: center; }
 
 /* 5Page */
+.form-elements{
+    /*width:50%;*/
+    flex-direction: column;
+    display: flex;
+}
+
 .contact{background:rgb(0, 0, 0) no-repeat; background-size: cover; height: 100vh;  display: flex; justify-content: center; align-items: center; font-family: 'Rajdhani', sans-serif;}
 .contactContainer{height:50vh; width:100%; display: flex; flex-direction:column;}
 .topArea{height:50vh; width:100%;  display: flex;}
@@ -371,8 +377,8 @@ h1{
 
 .rightArea form{width:70vh; display: flex; flex-wrap : wrap; }
 
-.rightArea fieldset{border:none; display: inline-flex;  flex-direction:column; }
-.rightArea label{color:#fff; font-weight: bold; font-size: 20px; margin-bottom: 10px;}
+.rightArea fieldset{border:none; display: inline-flex;  flex-direction:column; margin-bottom: 10px; }
+.rightArea label{color:#fff; font-weight: bold; font-size: 20px; }
 .rightArea input{width:20vh; height:5vh; background:rgb(255, 255, 255); border:none; border-radius: 10px; padding:10px;}
 #userMessage{width:50vh; height:20vh; background:rgb(255, 255, 255); border:none; border-radius: 10px; overflow-y:hidden; padding:10px; }
 #sendBtn{width:10vh; height:5vh;  background:rgb(255, 255, 255); border-radius: 10px; color:rgba(0, 0, 0, 0.432); font-weight: bold; font-size: 20px; border:1px solid #fff;}
@@ -521,15 +527,36 @@ h1{
 }
 
 @media screen and (max-width: 1000px) {
+    .contact{
+        align-items: initial;
+    }
+    .license{
+        width:100% !important;
+    }
+    .my{
+        width:100% !important;
+    }
+    .rightArea fieldset{
+        margin-bottom: 10px;
+    }
+    .rightArea label{
+        margin-bottom: 0 !important;
+    }
+    .rightArea input{
+        width:initial !important;
+        height:initial !important;
+
+    }
     .logo{
         left:10px !important;
     }
 
     #userMessage{
-        width:90% !important;
+        width:100% !important;
     }
     .leftArea{
         width: 100% !important;
+        margin-bottom: 10px;
     }
     .topArea{
         flex-direction: column !important;
@@ -551,6 +578,9 @@ h1{
     }
     .rightArea form{
         width:100% !important;
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
     }
     .photo{
         width: 100% !important;
@@ -604,6 +634,12 @@ h1{
     }
 }
 
+
+@media screen and (max-width: 280px){
+    .editor-block{
+        width: 250px !important;
+    }
+}
 
 
 .slideBody .options .option {
